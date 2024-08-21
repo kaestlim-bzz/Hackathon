@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../scripts/app.js"></script>
+  <script src="../scripts/getAudio.js"></script>
+  <script src="../scripts/getTextFromVoice.js"></script>
+
+  <title>FormFiller | Persönliche Informationen</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">FormFiller Erweiterung</h1>
+    <p1 id="info">Füllen Sie nun ihre persönlichen Daten ein, damit diese automatisch bei Forms eingefügt werden können.</p1>
+  </header>
+
+  <main>
+    <h2>Persönliche Informationen</h2>
+
+    <form id="personalInfoForm" action="output.html" method="post">
+      <label for="firstName">Vorname</label>
+      <input type="text" id="firstName" name="firstName" required><br><br>
+      <label for="lastName">Nachname</label>
+      <input type="text" id="lastName" name="lastName" required><br><br>
+      <label for="email">E-Mail</label>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="tele">telefon</label>
+      <input type="tele" id="tele" name="tele" required><br><br>
+      <button type="submit">Absenden</button>
+    </form>
+  </main>
+  <script  src="../scripts/loadPersonalInfo.js"></script>
+  <script  src="../scripts/savePersonalInfo.js"></script>
+  <header>
+    
+  </header>
+</body>
+</html>
